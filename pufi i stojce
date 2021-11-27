@@ -1,0 +1,35 @@
+using System;
+
+namespace pufi_i_stojce
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Vnesete broj za zolti snoli :");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Vnesete broj za crveni snoli :");
+            int y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Vnesete broj za sini snoli :");
+            int z = Convert.ToInt32(Console.ReadLine());
+            int zbir = x + y + z;
+            int broj = 0;
+
+
+            if (zbir % 3 == 1)
+            {
+
+                broj++;
+                zbir = zbir + broj;
+            }
+            broj++;
+            if (zbir % 3 == 0)
+                broj = 0;
+            if (zbir == 0)
+                broj = 3;
+
+            Console.WriteLine("Stojce treba da doturi " + broj + " snoli");
+
+        }
+    }
+}
