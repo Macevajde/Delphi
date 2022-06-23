@@ -1,0 +1,25 @@
+using System;
+
+namespace aerodrom
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string broj1 = "21";
+            string broj2 = "12";
+            int brojac = 0;
+            for (int i=0;i<broj1.Length;i++)
+            {
+                for(int j=0;j<broj2.Length;j++)
+                {
+                    if (broj1[i] == broj2[j])
+                        brojac++;
+                }
+                
+            }
+            Console.WriteLine(brojac);
+
+        }
+    }
+}
